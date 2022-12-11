@@ -1,0 +1,242 @@
+html {
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+html::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    background: #FFF url("../img/bg.png") repeat;
+    background-attachment: fixed;
+    font-family: "Varela Round";
+    padding: 0 8%;
+}
+
+
+img {
+    width: 100px;
+}
+
+.cabecera {
+    background: #FFF url("../img/bg.png") repeat;
+    background-attachment: fixed;
+    position: fixed;
+    width: 84%;
+    height: 5vh;
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: rgba(0, 0, 0, 0.5);
+    border-style: solid;
+}
+
+.cabecera__nombre {
+    width: 50vw;
+}
+
+.cabecera__menu {
+    width: 50vw;
+}
+
+.cabecera__menu__lista {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecera__menu__lista li a {
+    text-decoration: none;
+    color: black;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.presentacion__texto {
+    width: 70%;
+}
+
+.presentacion__nombre {
+    display: block;
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.712);
+}
+
+.presentacion__details {
+    display: block;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.712);
+    margin: 4% 0;
+}
+
+.presentacion__enlaces {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.presentacion__enlaces a {
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.712);
+    text-decoration: none;
+    padding-left: 1.3rem;
+}
+
+.presentacion__enlaces a:hover {
+    font-weight: bold;
+}
+
+.presentacion__enlaces :nth-child(1) {
+    background: url("../img/github.png") no-repeat left;
+    background-size: 1.1rem;
+}
+
+.presentacion__enlaces :nth-child(2) {
+    background: url("../img/linkedin.png") no-repeat left;
+    background-size: 1.1rem;
+}
+
+.presentacion__enlaces :nth-child(3) {
+    background: url("../img/cv.png") no-repeat left;
+    background-size: 1.1rem;
+}
+
+.presentacion__img {
+    width: 30%;
+    border-radius: 100%;
+}
+
+.proyectos {
+    min-height: 100vh;
+    padding-top: 13vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.proyectos__titulo {
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.proyectos__articulos {
+    display: flex;
+    flex-direction: column;
+}
+
+.proyectos__card {
+    display: flex;
+    width: 99%;
+    margin: 1.5% 0;
+    align-items: center;
+    gap: 1%;
+}
+
+.proyectos__card:nth-child(2n) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.proyectos__card__img {
+    width: 60%;
+}
+
+.proyectos__card__texto {
+    width: 40%;
+}
+
+.proyectos__card__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 3%;
+}
+
+.proyectos__card__description {
+    font-size: 1rem;
+    margin: 3%;
+}
+
+.proyectos__card__buttons {
+    margin: 5% 3%;
+    display: flex;
+    gap: 5%;
+}
+
+.proyectos__card__buttons__repositorio{
+    color: #2A7AE4;
+    text-decoration: none;
+    padding: 4%;
+    border: #2A7AE4 1px solid;  
+    transition: 0.5s;
+  
+}
+
+.proyectos__card__buttons__demo {
+    background-color: #2A7AE4;
+    color:#FFFFFF;
+    text-decoration: none;
+    padding: 4%;
+    transition: 0.5s;
+
+}
+
+.proyectos__card__buttons__repositorio:hover, .proyectos__card__buttons__demo:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.skills {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 13vh;
+}
+
+.skills__titulo {
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.skills__cards {
+    display: flex;
+    margin-top: 1%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.skills__card {
+    background-color: #2a7be421;
+    padding: 5%;
+    margin: 1%;
+    aspect-ratio: 1;
+}
+
+.formacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.formacion__titulo {
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.formacion__cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 1% auto;
+}
+
+.formacion__card {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nahuel Vilarreal</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/contenido.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+</head>
+
+<body>
+    <header class="cabecera">
+        <p class="cabecera__nombre">Nahuel Villarreal</p>
+        <nav class="cabecera__menu">
+            <ul class="cabecera__menu__lista">
+                <li><a href="#presentacion">Sobre mi</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#formaciones">Formaci&oacute;n</a></li>
+                <li>
+                    <adress class="cabecera__menu__lista__correo">nahuelv77@gmail.com</adress>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<scroll-container>
+    <scroll-page id="presentacion">
+        <section class="presentacion">
+
+            <div class="presentacion__texto">
+                <span class="presentacion__nombre">Hola! mi nombre es Nahuel y soy desarrollador web en Argentina</span>
+                <span class="presentacion__details">Estudio Lic. en ciencias f&iacute;sicas y estoy participando en el programa de Oracle Next Education en Alura.</span>
+                <div class="presentacion__enlaces">
+                    <a class="presentacion__github" href="https://github.com/NahuelVillarreal" target="_blank">Github</a>
+                    <a class="presentacion__linkedin" href="https://www.linkedin.com/in/nahuel-villarreal77/" target="_blank">Linkedin</a>
+                    <a class="presentacion__cv" href="./assets/archives/cv.pdf">Resumen</a>
+                </div>
+            </div>
+            <img class="presentacion__img" src="./assets/img/perfil.jpeg" alt="imagen de perfil">
+
+        </section>
+    </scroll-page>
+
+    <scroll-page id="proyectos">
+        <section class="proyectos">
+            <h1 class="proyectos__titulo">Proyectos</h1>
+            <div class="proyectos__articulos">
+                <div class="proyectos__card">
+                    <img class="proyectos__card__img" src="./assets/img/encriptador.png" alt="preview encriptador">
+                    <div class="peoyectos__card__texto">
+                        <h2 class="proyectos__card__title">Encriptador de texto</h2>
+                        <p class="proyectos__card__description">Proyecto propuesto en el programa ONE de Alura</p>
+                        <div class="proyectos__card__buttons">
+                            <a class="proyectos__card__buttons__repositorio" href="https://github.com/NahuelVillarreal/Sprint01-Encriptador" target="_blank">Repositorio</a>
+                            <a class="proyectos__card__buttons__demo" href="https://nahuelvillarreal.github.io/Sprint01-Encriptador/" target="_blank">Ver demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <article class="proyectos__card">
+                    <img class="proyectos__card__img" src="./assets/img/ahorcado.png" alt="preview ahorcado">
+                    <div class="peoyectos__card__texto">
+                        <h2 class="proyectos__card__title">Juego del ahorcado</h2>
+                        <p class="proyectos__card__description">Proyecto propuesto en el programa ONE de Alura</p>
+                        <div class="proyectos__card__buttons">
+                            <a class="proyectos__card__buttons__repositorio" href="https://github.com/NahuelVillarreal/Sprint02-JuegoAhorcado" target="_blank">Repositorio</a>
+                            <a class="proyectos__card__buttons__demo" href="https://nahuelvillarreal.github.io/Sprint02-JuegoAhorcado/" target="_blank">Ver demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="proyectos__card">
+                    <img class="proyectos__card__img" src="./assets/img/base-datos.png" alt="preview base datos">
+                    <div class="peoyectos__card__texto">
+                        <h2 class="proyectos__card__title">Base de datos</h2>
+                        <p class="proyectos__card__description">Base de datos con fines did&acute;cticos para interiorizarme en SQL</p>
+                        <div class="proyectos__card__buttons">
+                            <a class="proyectos__card__buttons__repositorio" href="https://github.com/NahuelVillarreal/Base-datos-Bomberos" target="_blank">Repositorio</a>
+                            <a class="proyectos__card__buttons__demo disabled" href="#" target="_blank">Ver demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="proyectos__card">
+                    <img class="proyectos__card__img" src="./assets/img/calculadora.png" alt="preview calculadora">
+                    <div class="peoyectos__card__texto">
+                        <h2 class="proyectos__card__title">Calculadora con Python</h2>
+                        <p class="proyectos__card__description">Calculadora básica implementando la librer&iacute;a Tkinter de python</p>
+                        <div class="proyectos__card__buttons">
+                            <a class="proyectos__card__buttons__repositorio" href="https://github.com/NahuelVillarreal/Calculadora" target="_blank">Repositorio</a>
+                            <a class="proyectos__card__buttons__demo disabled" href="#" target="_blank">Ver demo</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </scroll-page>
+
+        <section class="sobre-mi">
+            
+        </section>
+
+    <scrool-page id="skills">
+        <section class="skills">
+            <h1 class="skills__titulo">Skills</h1>
+            <div class="skills__cards">
+                <div class="skills__card">
+                    <img class="skills__card__img" src="./assets/img/html5.png" alt="icono html5">
+                    <p class="skills__card__title">HTML 5</p>
+                </div>
+                <div class="skills__card">
+                    <img class="skills__card__img" src="./assets/img/css-3.png" alt="icono css3">
+                    <p class="skills__card__title">CSS 3</p>
+                </div>
+                <div class="skills__card">
+                    <img class="skills__card__img" src="./assets/img/javascript.png" alt="icono javascript">
+                    <p class="skills__card__title">javascript</p>
+                </div>
+                <div class="skills__card">
+                    <img class="skills__card__img" src="./assets/img/python.png" alt="icono python">
+                    <p class="skills__card__title">Python</p>
+                </div>
+                <div class="skills__card">
+                    <img class="skills__card__img" src="./assets/img/django.png" alt="icono django">
+                    <p class="skills__card__title">Django</p>
+                </div>
+                <div class="skills__card">
+                    <img class="skills__card__img" src="./assets/img/java.png" alt="icono java">
+                    <p class="skills__card__title">Java</p>
+                </div>
+            </div>
+        </section>
+    </scrool-page>
+
+    <scroll-page id="formaciones">
+        <section class="formacion">
+            <h1 class="formacion__titulo">Formaci&oacute;n</h1>
+            <div class="formacion__cards">
+                <article class="formacion__card">
+                    <img class="formacion__card__img" src="./assets/img/logo-uns.png" alt="logo uns">
+                    <p class="formacion__card__title">Licenciatura en F&iacute;sica</p>
+                    <p class="formacion__card__description">En curso - 2018</p>
+                </article>
+                <article class="formacion__card">
+                    <img class="formacion__card__img" src="./assets/img/upso-logo.png" alt="logo upso">
+                    <p class="formacion__card__title">Tecnicatura en tecnolog&iacute;as de a programaci&oacute;n</p>
+                    <p class="formacion__card__description">En curso - 2021</p>
+                </article>
+                <article class="formacion__card">
+                    <img class="formacion__card__img" src="./assets/img/logo-alura.png" alt="logo alura">
+                    <p class="formacion__card__title">Programa ONE - Alura Latam</p>
+                    <p class="formacion__card__description">En curso - 2022</p>
+                </article>
+            </div>
+        </section>
+    </scroll-page>
+
+        <section class="contacto">
+            
+        </section>
+</scroll-container>
+    <footer class="footer">
+
+    </footer>
+
+</body>
+
+</html>
