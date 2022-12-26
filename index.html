@@ -7,7 +7,11 @@
     <title>Nahuel Vilarreal</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/contenido.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+    <link rel="stylesheet" media="(max-width: 768px)" href="./assets/css/tablet.css">
+    <link rel="stylesheet" media="(max-width: 375px)" href="./assets/css/movil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,11 +20,11 @@
         <nav class="cabecera__menu">
             <ul class="cabecera__menu__lista">
                 <li><a href="#presentacion">Sobre mi</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#formaciones">Formaci&oacute;n</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
                 <li>
-                    <adress class="cabecera__menu__lista__correo">nahuelv77@gmail.com</adress>
+                    <a href="#contacto"><adress class="cabecera__menu__lista__correo">nahuelv77@gmail.com</adress></a>
                 </li>
             </ul>
         </nav>
@@ -44,11 +48,93 @@
         </section>
     </scroll-page>
 
+    <scrool-page id="skills">
+        <section class="skills">
+            <h1 class="skills__titulo">Skills</h1>
+            <div class="skills__cards">
+                <div class="skills__card">
+                    <img class="skills__card__img" src="./assets/img/skills/html5.png" alt="icono html5">
+                    <p class="skills__card__title">HTML 5</p>
+                </div>
+                <div class="skills__card">
+                    <img class="skills__card__img" src="./assets/img/skills/css-3.png" alt="icono css3">
+                    <p class="skills__card__title">CSS 3</p>
+                </div>
+                <div class="skills__card">
+                    <img class="skills__card__img" src="./assets/img/skills/javascript.png" alt="icono javascript">
+                    <p class="skills__card__title">Javascript</p>
+                </div>
+                <div class="skills__card">
+                    <img class="skills__card__img" src="./assets/img/skills/python.png" alt="icono python">
+                    <p class="skills__card__title">Python</p>
+                </div>
+                <div class="skills__card">
+                    <img class="skills__card__img" src="./assets/img/skills/django.png" alt="icono django">
+                    <p class="skills__card__title">Django</p>
+                </div>
+                <div class="skills__card">
+                    <img class="skills__card__img" src="./assets/img/skills/java.png" alt="icono java">
+                    <p class="skills__card__title">Java</p>
+                </div>
+            </div>
+            <h1 class="skills__titulo">Soft skills</h1>
+            <div class="skills__cards">
+                <div class="skills__card">
+                    <img class="skills__card__img" src="./assets/img/skills/proactivo.png" alt="icono proactivo">
+                    <p class="skills__card__title">Proactivo</p>
+                </div>
+                <div class="skills__card">
+                    <img class="skills__card__img" src="./assets/img/skills/iniciativa.png" alt="icono iniciativa">
+                    <p class="skills__card__title">Iniciativa</p>
+                </div>
+                <div class="skills__card">
+                    <img class="skills__card__img" src="./assets/img/skills/flexible.png" alt="icono flexibilidad">
+                    <p class="skills__card__title">Flexibilidad</p>
+                </div>
+                <div class="skills__card">
+                    <img class="skills__card__img" src="./assets/img/skills/responsabilidad.png" alt="icono responsabilidad">
+                    <p class="skills__card__title">Responsabilidad</p>
+                </div>
+                <div class="skills__card">
+                    <img class="skills__card__img" src="./assets/img/skills/actitud-positiva.png" alt="icono actitud positiva">
+                    <p class="skills__card__title">Actitud positiva</p>
+                </div>
+                <div class="skills__card">
+                    <img class="skills__card__img" src="./assets/img/skills/trabajo-equipo.png" alt="icono trabajo en equipo">
+                    <p class="skills__card__title">Trabajo en equipo</p>
+                </div>
+            </div>
+        </section>
+    </scrool-page>
+
+    <scroll-page id="formaciones">
+        <section class="formacion">
+            <h1 class="formacion__titulo">Formaci&oacute;n</h1>
+            <div class="formacion__cards">
+                <article class="formacion__card">
+                    <img class="formacion__card__img" src="./assets/img/logo-uns.png" alt="logo uns">
+                    <p class="formacion__card__title">Licenciatura en F&iacute;sica</p>
+                    <p class="formacion__card__description">2018 - En curso</p>
+                </article>
+                <article class="formacion__card">
+                    <img class="formacion__card__img" src="./assets/img/upso-logo.png" alt="logo upso">
+                    <p class="formacion__card__title">Tecnicatura en tecnolog&iacute;as de a programaci&oacute;n</p>
+                    <p class="formacion__card__description">2021 - En curso</p>
+                </article>
+                <article class="formacion__card">
+                    <img class="formacion__card__img" src="./assets/img/logo-alura.png" alt="logo alura">
+                    <p class="formacion__card__title">Programa ONE - Alura Latam</p>
+                    <p class="formacion__card__description">2022 - En curso</p>
+                </article>
+            </div>
+        </section>
+    </scroll-page>
+
     <scroll-page id="proyectos">
         <section class="proyectos">
             <h1 class="proyectos__titulo">Proyectos</h1>
             <div class="proyectos__articulos">
-                <div class="proyectos__card">
+                <article class="proyectos__card">
                     <img class="proyectos__card__img" src="./assets/img/encriptador.png" alt="preview encriptador">
                     <div class="peoyectos__card__texto">
                         <h2 class="proyectos__card__title">Encriptador de texto</h2>
@@ -58,7 +144,7 @@
                             <a class="proyectos__card__buttons__demo" href="https://nahuelvillarreal.github.io/Sprint01-Encriptador/" target="_blank">Ver demo</a>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <article class="proyectos__card">
                     <img class="proyectos__card__img" src="./assets/img/ahorcado.png" alt="preview ahorcado">
@@ -99,73 +185,38 @@
         </section>
     </scroll-page>
 
-        <section class="sobre-mi">
-            
-        </section>
-
-    <scrool-page id="skills">
-        <section class="skills">
-            <h1 class="skills__titulo">Skills</h1>
-            <div class="skills__cards">
-                <div class="skills__card">
-                    <img class="skills__card__img" src="./assets/img/html5.png" alt="icono html5">
-                    <p class="skills__card__title">HTML 5</p>
-                </div>
-                <div class="skills__card">
-                    <img class="skills__card__img" src="./assets/img/css-3.png" alt="icono css3">
-                    <p class="skills__card__title">CSS 3</p>
-                </div>
-                <div class="skills__card">
-                    <img class="skills__card__img" src="./assets/img/javascript.png" alt="icono javascript">
-                    <p class="skills__card__title">javascript</p>
-                </div>
-                <div class="skills__card">
-                    <img class="skills__card__img" src="./assets/img/python.png" alt="icono python">
-                    <p class="skills__card__title">Python</p>
-                </div>
-                <div class="skills__card">
-                    <img class="skills__card__img" src="./assets/img/django.png" alt="icono django">
-                    <p class="skills__card__title">Django</p>
-                </div>
-                <div class="skills__card">
-                    <img class="skills__card__img" src="./assets/img/java.png" alt="icono java">
-                    <p class="skills__card__title">Java</p>
-                </div>
-            </div>
-        </section>
-    </scrool-page>
-
-    <scroll-page id="formaciones">
-        <section class="formacion">
-            <h1 class="formacion__titulo">Formaci&oacute;n</h1>
-            <div class="formacion__cards">
-                <article class="formacion__card">
-                    <img class="formacion__card__img" src="./assets/img/logo-uns.png" alt="logo uns">
-                    <p class="formacion__card__title">Licenciatura en F&iacute;sica</p>
-                    <p class="formacion__card__description">En curso - 2018</p>
-                </article>
-                <article class="formacion__card">
-                    <img class="formacion__card__img" src="./assets/img/upso-logo.png" alt="logo upso">
-                    <p class="formacion__card__title">Tecnicatura en tecnolog&iacute;as de a programaci&oacute;n</p>
-                    <p class="formacion__card__description">En curso - 2021</p>
-                </article>
-                <article class="formacion__card">
-                    <img class="formacion__card__img" src="./assets/img/logo-alura.png" alt="logo alura">
-                    <p class="formacion__card__title">Programa ONE - Alura Latam</p>
-                    <p class="formacion__card__description">En curso - 2022</p>
-                </article>
-            </div>
+    <scroll-page id="contacto">
+        <section class="contacto">
+            <img class="contacto__image" src="./assets/img/contacto.jpg" alt="imagen telefono">
+            <form class="contacto__formulario" action="">
+                <fieldset class="contacto__fieldset">
+                    <legend><h1 class="contacto__title">Contacto</h1></legend>
+                    <legend class="contacto__description">¿Quieres contactarme?<br>Completa el siguiente formulario y me contactar&eacute; lo antes posible.</legend>
+                        <p class="contacto__campo">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre-remitente" required>
+                        </p>
+                        <p class="contacto__campo">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email-remitente" required>
+                        </p>
+                        <p class="contacto__campo">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" name="asunto-mensaje">
+                        </p>
+                        <p class="contacto__campo">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="cuerpo-mensaje" required></textarea>
+                        </p>
+                        <button class="contacto__submit" type="submit">Enviar</button>
+                </fieldset>
+                
+            </form>
         </section>
     </scroll-page>
-
-        <section class="contacto">
-            
-        </section>
 </scroll-container>
     <footer class="footer">
-
+        <p>Desarrollado por Nahuel Villarreal | Todos los derechos reservados</p>
     </footer>
-
 </body>
-
 </html>

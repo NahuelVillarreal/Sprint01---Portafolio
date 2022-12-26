@@ -10,13 +10,9 @@ html::-webkit-scrollbar {
 body {
     background: #FFF url("../img/bg.png") repeat;
     background-attachment: fixed;
-    font-family: "Varela Round";
-    padding: 0 8%;
-}
-
-
-img {
-    width: 100px;
+    font-family: "Raleway", sans-serif;
+    width: 84%;
+    margin: 0 auto
 }
 
 .cabecera {
@@ -25,7 +21,8 @@ img {
     position: fixed;
     width: 84%;
     height: 5vh;
-    padding-top: 2%;
+    padding: 2% 8vw 0 8vw;
+    margin-left: -8vw;
     display: flex;
     justify-content: space-between;
     border-bottom: rgba(0, 0, 0, 0.5);
@@ -33,16 +30,17 @@ img {
 }
 
 .cabecera__nombre {
-    width: 50vw;
+    max-width: 50vw;
 }
 
 .cabecera__menu {
-    width: 50vw;
+    min-width: 50vw;
 }
 
 .cabecera__menu__lista {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .cabecera__menu__lista li a {
@@ -50,10 +48,14 @@ img {
     color: black;
 }
 
+.cabecera__menu__lista__correo {
+    font-weight: bold;
+}
+
 .presentacion {
     display: flex;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .presentacion__texto {
@@ -78,6 +80,7 @@ img {
     display: flex;
     width: 50%;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .presentacion__enlaces a {
@@ -111,8 +114,98 @@ img {
     border-radius: 100%;
 }
 
-.proyectos {
+.skills {
+    min-height: 87vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 13vh;
+}
+
+.skills__titulo {
+    margin: 2% auto;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.skills__cards {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.skills__card {
+    display: flex;
+    background-color: #2a7be421;
+    width: 13%;
+    aspect-ratio: 1;
+    flex-direction: column;
+    justify-content: end;
+    padding: 1%;
+    gap: 5px;
+    word-break: break-all;
+}
+
+.skills__card__img {
+    width: 25%;
+}
+
+#formaciones {
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    background-color: #2a7be421;
+    margin: 0 0 0 -8vw;
+    justify-content: center;
+}
+
+.formacion {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    width: 84vw;
+}
+
+.formacion__titulo {
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.formacion__cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 0;
+}
+
+.formacion__card {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    background-color: white;
+}
+
+.formacion__card__img {
+    width: 96%;
+    border-width: 1px;
+    border-style: solid;
+    aspect-ratio: 3.8;
+    padding: 2%;
+}
+
+.formacion__card__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 3% 0;
+}
+
+.formacion__card__description {
+    font-size: 1.1rem;
+}
+
+.proyectos {
+    min-height: 87vh;
     padding-top: 13vh;
     display: flex;
     flex-direction: column;
@@ -190,53 +283,101 @@ img {
     transition: 0.5s;
 }
 
-.skills {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding-top: 13vh;
+.disabled {
+    background-color: #CCCCCC;
+    pointer-events: none; 
+    cursor: default;
 }
 
-.skills__titulo {
-    margin: 0 auto;
+.contacto {
+    min-height: 66vh;
+    display: flex;
+    margin-left: -8vw;
+    margin-right: -8vw;
+    gap: 5%;
+    padding: 3% 18%;
+    background-color: #2a7be421;   
+}
+
+.contacto__image {
+    width: 40%;
+}
+
+.contacto__formulario {
+    width: 60%;
+}
+
+.contacto__title {
     font-size: 1.5rem;
     font-weight: 800;
 }
 
-.skills__cards {
+.contacto__fieldset {
+    height: 100%;
     display: flex;
-    margin-top: 1%;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction:column;
+    justify-content: space-between;
+    gap: 10px;
 }
 
-.skills__card {
-    background-color: #2a7be421;
-    padding: 5%;
-    margin: 1%;
-    aspect-ratio: 1;
-}
-
-.formacion {
+.contacto__campo {
+    background-color: white;
     display: flex;
     flex-direction: column;
+    padding: 2%;
+    border-radius: 10px;
 }
 
-.formacion__titulo {
-    margin: 0 auto;
-    font-size: 1.5rem;
-    font-weight: 800;
+.contacto__campo label {
+    font-size: 0.9rem;
+    color: #0000008e
 }
 
-.formacion__cards {
+.contacto__campo input {
+    font-family: "Raleway", sans-serif;
+    border-style: none;
+    font-size: 1.2rem;
+    font-style: italic;
+
+}
+
+.contacto__campo input:focus {
+    outline: none;
+}
+
+.contacto__campo textarea {
+    font-family: "Raleway", sans-serif;
+    border-style: none;
+    font-size: 1.2rem;
+    font-style: italic;
+    height: 7.2rem;
+    resize: none;
+}
+
+.contacto__campo textarea:focus {
+    outline: none;
+}
+
+.contacto__submit {
+    width: 20%;
+    background-color: #2A7AE4;
+    color:#FFFFFF;
+    text-decoration: none;
+    padding: 2%;
+    transition: 0.5s;
+}
+
+.contacto__submit:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.footer {
+    min-height: 5vh;
+    border-top: rgba(0, 0, 0, 0.5);
+    border-style: solid;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    margin: 1% auto;
-}
-
-.formacion__card {
-    display: flex;
-    flex-direction: column;
-    margin: 5%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }

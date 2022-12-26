@@ -1,0 +1,33 @@
+body {
+    width: 95%;
+}
+
+.cabecera {
+    width: 95%;
+    padding: 2vh 2.5vw 0 2.5vw;
+    margin-left: -2.5vw;
+}
+
+.presentacion {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.presentacion__texto {
+    width: 100%;
+}
+
+.presentacion__img {
+    margin-bottom: 5%
+}
+
+.skills__cards {
+    flex-wrap: wrap;
+}
+
+.skills__card {
+    width: 45%;
+}
+
+
